@@ -38,11 +38,6 @@ const initialCalendarState = {
 		breakfast: null,
 		lunch: null,
 		dinner: null
-	},
-	sunday: {
-		breakfast: null,
-		lunch: null,
-		dinner: null
 	}
 }
 
@@ -57,7 +52,6 @@ function calendar(state = initialCalendarState, action) {
 					[meal]: recipe.label
 				}
 			}
-		break;
 		case REMOVE_FROM_CALENDAR:
 			return {
 				...state,
@@ -66,7 +60,6 @@ function calendar(state = initialCalendarState, action) {
 					[meal]: null
 				}
 			}
-		break;
 		default:
 			return state
 	}
