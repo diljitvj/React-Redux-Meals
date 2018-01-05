@@ -6,7 +6,6 @@ import registerServiceWorker from './registerServiceWorker'
 import { createStore } from 'redux'
 import reducer from './reducers'
 import { Provider } from 'react-redux'
-import { connect } from 'react-redux'
 
 const store = createStore(
     reducer,
